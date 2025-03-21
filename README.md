@@ -25,8 +25,6 @@ Default.json is not necessary for a custom NPC, but it is heavily incentivized f
 	
 Mail.json is not necessary for a custom NPC, you can go without creating a single letter for your custom NPC
 	
-SpaceCore.json is not necessary for a custom NPC, this is my integration for animationDescriptions.json to have sound effects, a custom warp totem, and any other things I wanted
-	
 StringsFromCSFiles.json is not necessary as there is a vast list of strings to change and there are just a few strings that I wanted to have custom
 	
 TownComments.json is not necessary unless you'd like an expansive dialogue surrounding your custom NPC
