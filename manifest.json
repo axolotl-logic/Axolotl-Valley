@@ -1,0 +1,10 @@
+{
+  "Name": "Axolotl Valley",
+  "Author": "Axolotl-Logic",
+  "Version": "1.0.0",
+  "Description": "A magical wonderland of axolotl related mysteries.",
+  "UniqueID": "AxolotlLogic.Valley",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

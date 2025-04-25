@@ -1,0 +1,58 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.6.1",
+  "ConfigSchema": {
+    "Existential Dread": {
+      "AllowValues": "true, false",
+      "Default": "false",
+      "Section": "Content",
+      "Description": "Be warned, stare too long into the void and it gets awkward."
+    }
+  },
+  "Changes": [
+    {
+      "LogName": "Load axolotl fish assets load",
+      "Action": "Load",
+      "Target": "Mods/axolotl_logic.fish/ValleyAxolotl",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Fish as object",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "axolotl_logic.fish.Axolotl": {
+          "Name": "Axolotl",
+          "DisplayName": "Axolotl",
+          "Description": "A four legged creature that looks halfway between a fish and a lizard. They smile up at you and you find the cuteness disarming.",
+          "Edibility": "-300",
+          "Type": "Fish",
+          "Category": -4,
+          "Price": "500",
+          "Texture": "Mods\\axolotl_logic.fish\\ValleyAxolotl",
+          "SpriteIndex": 0,
+          "ContextTags": ["fish_talk_bass"]
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Fish",
+      "Entries": {
+        "axolotl_logic.fish.Axolotl": "Axolotl/50/mixed/32/45/600 2600/spring summer fall winter/both/690 .4 685 .1/1/.50/.1/0"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": ["FishShop", "Items"],
+      "Entries": {
+        "axolotl_logic.fish.Axolotl": {
+          "Id": "axolotl_logic.fish.Axolotl.StoreItem",
+          "ItemId": "axolotl_logic.fish.Axolotl",
+          "Price": 1000
+        }
+      }
+    }
+  ]
+}
